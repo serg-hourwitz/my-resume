@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5_CSS3</title>
+   <style>
+        body {
+            background-color: #f5f7fa;
+ }
+
+ .img {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ img {
+     width: 34%;
+     display: block;
+     margin: auto;
+     margin-bottom: 20px;
+ }
+ @media(max-width: 320px) {
+    img {width: 100%;
+        flex-direction: column;
+ }
+}
+ @media(max-width: 768px) {
+    img {width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+ }
+@media(max-width: 991px) {
+     img {width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+   </style>
+    
+</head>
+<body>
+    <div class="img">
+        <img src="img/certificate HTML.png" alt="GoIt">
+        <img src="img/certificate_site_ layout.png" alt="Netology">
+        <img src="img/HTML_CSS-1.png" alt="TestProvider_1">
+        <img src="img/HTML_CSS-2.png" alt="TestProvider_2">
+    </div>
+   
+</body>
+</html>
